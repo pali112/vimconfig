@@ -8,6 +8,8 @@ echo 'colors zenburn' >> ~/.vimrc;
 echo 'com! JediDisableauto :"let g:jedi#auto_initialization = 0"' >> ~/.vimrc;
 echo 'com! JediDisableconfig :"let g:jedi#auto_vim_configuration = 0"' >> ~/.vimrc;
 echo 'set guifont=Source\ Code\ Pro\ 12' >> ~/.vimrc;
+echo "let g:snipMate = { 'snippet_version' : 1 }" >> ~/.vimrc;
+
 
 git clone --recursive https://github.com/davidhalter/jedi-vim.git ~/.vim_runtime/my_plugins/jedi-vim;
 
