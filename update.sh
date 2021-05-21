@@ -1,4 +1,6 @@
 #!/bin/sh
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime;
+sh ~/.vim_runtime/install_awesome_vimrc.sh;
 cp -r ./colors ~/.vim_runtime;
 echo 'com! FormatXML :%!python3 -c "import xml.dom.minidom, sys; print(xml.dom.minidom.parse(sys.stdin).toprettyxml())"' >> ~/.vimrc;
 echo 'colors zenburn' >> ~/.vimrc;
